@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
+import logo from "../assets/images/learn-logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,7 +11,9 @@ const Navbar = () => {
         <div className="flex items-center space-x-8">
           {/* Logo */}
           <div className="text-2xl font-bold uppercase tracking-widest">
-            <Link to="/">Tutorify</Link>
+            <Link to="/">
+            <img src={logo} alt="tutorify logo" width={150} height={150} />
+            </Link>
           </div>
 
           {/* Nav Links (Hidden on Small Screens) */}
@@ -105,9 +107,9 @@ const Navbar = () => {
 
       {/* Mobile Menu (Toggled) */}
       {isOpen && (
-        <div className="md:hidden" >
-          <ul className="flex flex-col items-center space-y-2 mt-4 text-lg">
-            <li >
+        <div className="md:hidden mt-2" style={{border:"none", boxShadow:"0px 0.4px 0px 0px #F3994B",padding:'15px'}} >
+          <ul className="flex flex-col items-center space-y-2 mt-4 text-lg text-center p-4">
+            <li className="p-1" style={{borderBottom:"0.1px solid #F3994B",width:"100%"}}>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -119,7 +121,7 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
-            <li>
+            <li className="text-center p-1" style={{borderBottom:"0.1px solid #F3994B",width:"100%"}}>
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
@@ -131,7 +133,7 @@ const Navbar = () => {
                 About
               </NavLink>
             </li>
-            <li>
+            <li className="text-center p-1" style={{borderBottom:"0.1px solid #F3994B",width:"100%"}}>
               <NavLink
                 to="/course"
                 className={({ isActive }) =>
@@ -143,7 +145,7 @@ const Navbar = () => {
                 Courses
               </NavLink>
             </li>
-            <li>
+            <li className="text-center p-1" style={{borderBottom:"0.1px solid #F3994B",width:"100%"}}>
               <NavLink
                 to="/price"
                 className={({ isActive }) =>

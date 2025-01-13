@@ -1,5 +1,5 @@
 import React from 'react'
-
+import icon from '../assets/images/icon.png'
 export default function Footer() {
   return (
     <>
@@ -9,15 +9,15 @@ export default function Footer() {
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-              <a href="" class="flex items-center">
-                
+              <a href="" class="flex items-center justify-center gap-3">
+              <img src={icon} alt="Tutorify icon" width={30} height={30}/>
                   <span class="self-center text-2xl font-semibold whitespace-nowrap text-[#F3994B]">TUTORIFY</span>
               </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
                   <span class="mb-6 text-sm font-bold text-[#F3994B] uppercase dark:text-[#F3994B]"style={{borderBottom:"2px solid #F3994B"}}>Resources</span>
-                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium" >
                       <li class="mb-4">
                           <a href="" class="hover:underline">JavaScript</a>
                       </li>
