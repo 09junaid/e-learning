@@ -39,7 +39,7 @@ export default function Footer() {
               </div>
               <div >
                   <span class="mb-6 text-sm font-bold text-[#F3994B] uppercase dark:text-[#F3994B]" style={{borderBottom:"2px solid #F3994B"}}>Legal</span>
-                  <ul class="text-gray-500 dark:text-gray-400 font-medium mt-2">
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
                           <a href="#" class="hover:underline">Privacy Policy</a>
                       </li>
